@@ -7,7 +7,7 @@ a {
 
 body {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 22px;
     font-family: "Montserrat", serif;
     color: #eeeeee;
     background-repeat: no-repeat;
@@ -27,7 +27,6 @@ body {
 }
 .text {
 text-indent: 1.5em;
-
 margin-left: 10px;
 margin-right: 10px;
 }
