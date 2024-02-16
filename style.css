@@ -23,7 +23,6 @@ body {
   width: 75%;
   margin: 0 auto;
   padding: 0 15px;
-  position: relative;
 }
 .text {
 text-indent: 1.5em;
@@ -32,6 +31,9 @@ margin-right: 10px;
 }
 .neubox
 {
+
+  justify-content: center;
+  min-width: 500px;
   margin: 0 auto;
   border-radius: 23px;
   background: #262626;
