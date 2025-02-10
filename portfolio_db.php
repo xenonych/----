@@ -26,6 +26,16 @@ function getAboutMe()
     closeDB();
     return mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
+function getLink()
+{
+    global $link;
+    openDB();
+
+    $result = mysqli_query($link, "SELECT * FROM links");
+
+    closeDB();
+    return mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
 
 function getImages()
 {

@@ -1,6 +1,7 @@
 <?php
 include "portfolio_db.php";
 $images = getImages();
+$getLink = getLink();
 $about_me = getAboutMe();
 $age = floor((strtotime(date('d-m-Y')) - strtotime($about_me[0]["date_of_birth"])) / (60 * 60 * 24 * 365.2421896));
 ?>
@@ -92,13 +93,20 @@ $age = floor((strtotime(date('d-m-Y')) - strtotime($about_me[0]["date_of_birth"]
           <p>Продолжая тему творчества, мне очень нравится заниматься графикой. 3д в лице SFM (Source Film Maker) и
             немного Blender, а также рисованием. Рисую в основном в блокноте и не много, поэтому в галерее примеров
             маловато. Но и я только начинаю свой творческий путь и надеюсь, мне будет что показать в будущем.</p>
-          <p>Мой vk: <a class="about_me_link" href="<?php echo $about_me[0]['vk_link'] ?>">Денис Головань</a></p>
-          <p>Мой tg: <a class="about_me_link" href="<?php echo $about_me[0]['tg_link'] ?>">Денис Головань</a></p>
+          <p>Мой vk: <a class="about_me_link" href="<?php echo $about_me[0]['vk_link'] ?>"><?php echo $about_me[0]['vk_link'] ?></a></p>
+          <p>Мой tg: <a class="about_me_link" href="<?php echo $about_me[0]['tg_link'] ?>"><?php echo $about_me[0]['tg_link'] ?></a></p>
           <p>Моя почта: <a class="about_me_link"
               href="mailto:<?php echo $about_me[0]['email'] ?>">den.daymler@gmail.com</a></p>
         </div>
+        
 
       </div>
+      <div class="text ">
+          <p>Ссылки на софт, которым я пользуюсь:</p>
+          <p><a class="about_me_link" href="<?php echo $getLink[0]['link'] ?>"><?php echo $getLink[0]['linkName'] ?></a></p>
+          <p><a class="about_me_link" href="<?php echo $getLink[1]['link'] ?>"><?php echo $getLink[1]['linkName'] ?></a></p>
+          <p><a class="about_me_link" href="<?php echo $getLink[2]['link'] ?>"><?php echo $getLink[2]['linkName'] ?></a></p>
+        </div>
     </div>
   </div>
   </div>
